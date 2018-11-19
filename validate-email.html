@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Validate email</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+    function isVadidateEmail(str) {
+        regexp = /^\w+@\w+\.\w+$/;
+        if (regexp.test(str)){
+            return true;
+        }
+        return false;
+    }
+    var email = prompt("Nhập email của bạn");
+    console.log(isVadidateEmail(email));
+
+</script>
+</body>
+</html>
